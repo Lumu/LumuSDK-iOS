@@ -37,7 +37,7 @@ LumuManager provides the next optional protocol methods:
 
 /*!
  * This method is called every time the manager receives a new value from Lumu.
- * @param value the received light value
+ * @param value the received lux value
  */
 -(void)lumuManagerDidReceiveData: (double)value;
 

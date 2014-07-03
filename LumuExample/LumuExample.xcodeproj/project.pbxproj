@@ -25,7 +25,7 @@
 		C44394FE18CE21F3003B4AB7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44394FD18CE21F3003B4AB7 /* MediaPlayer.framework */; };
 		C443950018CE21F8003B4AB7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44394FF18CE21F8003B4AB7 /* AudioToolbox.framework */; };
 		C443950218CE2309003B4AB7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C443950118CE2309003B4AB7 /* CoreTelephony.framework */; };
-		C47E0B4518D09FAB00B7109E /* Lumu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C47E0B4418D09FAB00B7109E /* Lumu.framework */; };
+		C4D1E1D218EDABA000053002 /* Lumu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D1E1D118EDABA000053002 /* Lumu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,7 +62,7 @@
 		C44394FD18CE21F3003B4AB7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C44394FF18CE21F8003B4AB7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C443950118CE2309003B4AB7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		C47E0B4418D09FAB00B7109E /* Lumu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lumu.framework; path = ../Lumu.framework; sourceTree = "<group>"; };
+		C4D1E1D118EDABA000053002 /* Lumu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lumu.framework; path = ../Lumu.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				C44394FE18CE21F3003B4AB7 /* MediaPlayer.framework in Frameworks */,
 				C44394FC18CE21ED003B4AB7 /* AVFoundation.framework in Frameworks */,
 				C44394C718CE21A7003B4AB7 /* CoreGraphics.framework in Frameworks */,
-				C47E0B4518D09FAB00B7109E /* Lumu.framework in Frameworks */,
+				C4D1E1D218EDABA000053002 /* Lumu.framework in Frameworks */,
 				C44394C918CE21A7003B4AB7 /* UIKit.framework in Frameworks */,
 				C44394C518CE21A7003B4AB7 /* Foundation.framework in Frameworks */,
 			);
@@ -116,7 +116,7 @@
 		C44394C318CE21A7003B4AB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C47E0B4418D09FAB00B7109E /* Lumu.framework */,
+				C4D1E1D118EDABA000053002 /* Lumu.framework */,
 				C443950118CE2309003B4AB7 /* CoreTelephony.framework */,
 				C44394FF18CE21F8003B4AB7 /* AudioToolbox.framework */,
 				C44394FD18CE21F3003B4AB7 /* MediaPlayer.framework */,
@@ -401,6 +401,7 @@
 					"$(inherited)",
 					/Users/Bench/Documents/Lumu/4_framework/StaticFramework/Lumu/Products,
 					"/Users/Bench/Documents/Lumu/4_framework/StaticFramework/Lumu/LumuSDK-iOS",
+					"/Users/Bench/Developer/Lumu/iOS/SDK/StaticFramework/Lumu/LumuSDK-iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LumuExample/LumuExample-Prefix.pch";
@@ -419,6 +420,7 @@
 					"$(inherited)",
 					/Users/Bench/Documents/Lumu/4_framework/StaticFramework/Lumu/Products,
 					"/Users/Bench/Documents/Lumu/4_framework/StaticFramework/Lumu/LumuSDK-iOS",
+					"/Users/Bench/Developer/Lumu/iOS/SDK/StaticFramework/Lumu/LumuSDK-iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LumuExample/LumuExample-Prefix.pch";

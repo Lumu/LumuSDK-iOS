@@ -30,6 +30,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)lumuManagerDidStartLumu
+{
+	NSLog(@"Start");
+}
+
+- (void)lumuManagerDidRecognizeLumu
+{
+	NSLog(@"Recognized");
+}
+
+- (void)lumuManagerDidNotRecognizeLumu
+{
+	NSLog(@"Not recognized");
+}
+
+- (void)lumuManagerDidNotGetRecordPermission
+{
+	NSLog(@"No record permission");
+}
+
 - (void)lumuManagerDidReceiveData:(CGFloat)value
 {
 	self.label.text = [NSString stringWithFormat:@"%.1f", value];
