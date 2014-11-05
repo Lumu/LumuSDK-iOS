@@ -17,6 +17,9 @@
 @protocol LumuManagerDelegate <NSObject>
 @optional
 
+/*!
+ * Called if the application does not have the microphone permission.
+ */
 -(void)lumuManagerDidNotGetRecordPermission;
 
 /*!
@@ -45,26 +48,30 @@
  */
 -(void)lumuManagerDidStopLumu;
 
--(void)lumuManagerDidRecognizeVolumeButtonPressed;
 @end
 
 @interface LumuManager : NSObject
 
 /*
- * The delegate property. When the delegate is set, the Lumu starts running and sending data.
- * When the delegate is set to nil, Lumu stops working.
+ * The delegate property. The delegate has to be set for
+ * LumuManager to start working.
+ * When the delegate is set to nil, LumuManager stops working.
  */
 
 @property (nonatomic, weak) id <LumuManagerDelegate> delegate;
 
 /*
- * This property defines if the LumuManager tries to automatically recognize Lumu 
- * when Lumu is attached, and stops it on Audio interrupts. If set to NO, you have to manually
- * start LumuManager.
- * The default value is YES.
+ * This property defines if the audio communication is active.
  */
 
-@property BOOL shouldRecognizeLumu;
+@property (nonatomic, readonly) BOOL audioCommunicationActive;
+
+/*
+ * This property defines if the Lumu was recognized and is communicating 
+ * with the device.
+ */
+
+@property (nonatomic, readonly) BOOL lumuCommunicationActive;
 
 /*
  * Shared instance.

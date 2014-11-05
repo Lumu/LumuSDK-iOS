@@ -22,6 +22,7 @@ To start receiving data from Lumu in your class, you have to complete the follow
 1. Conform to the ``LumuManagerDelegate`` protocol
 2. Register your class as the delegate for Lumu: ``[LumuManager sharedManager].delegate = self;``
 3. Implement the optional protocol methods, to receive data from Lumu
+4. Start the LumuManager: ``[[LumuManager sharedManager] startLumuManager];``
 
 LumuManager provides the next optional protocol methods: 
 ```objectivec
@@ -52,8 +53,7 @@ LumuManager provides the next optional protocol methods:
 -(void)lumuManagerDidStopLumu;
 ```
 
-By default, the LumuManager will try to start Lumu as soon as you set the delegate property. It will also automatically stop and start Lumu when you detach/attach it. 
-If you would like to manually start and stop Lumu you have to set the ``shouldRecognizeLumu`` property to ``NO``, before you set the delegate property. Then you have to use ``startLumuManager`` and ``stopLumuManager`` methods.
+The LumuManager will try to start communicating with Lumu once you call the ``startLumuManager`` method. It will automatically stop and start Lumu when you detach/attach it. You can stop the LumuManager by calling the ``stopLumuManager`` method.
 
 You can convert the light measurement from Lux to Foot-candles with the ``convertToFootCandles: (CGFloat)lux`` method.
 

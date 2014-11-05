@@ -20,8 +20,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 	[[UIApplication sharedApplication] setStatusBarHidden:YES];
+	LumuManager *lm = [LumuManager sharedManager];
+	lm.delegate = self;
+	[lm startLumuManager];
 	
-	[LumuManager sharedManager].delegate = self;
 }
 
 - (void)didReceiveMemoryWarning
