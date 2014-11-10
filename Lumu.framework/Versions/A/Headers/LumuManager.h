@@ -34,7 +34,7 @@
 
 /*!
  * This method is called every time the manager receives a new value from Lumu.
- * @param value the received light value
+ * @param value the received light value (lux)
  */
 -(void)lumuManagerDidReceiveData: (CGFloat)value;
 
