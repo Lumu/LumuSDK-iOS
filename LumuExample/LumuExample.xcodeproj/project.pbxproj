@@ -217,7 +217,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BPL;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Lumu Labs";
 				TargetAttributes = {
 					C44394E118CE21A7003B4AB7 = {
@@ -340,6 +340,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -399,14 +400,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/Bench/Documents/Lumu/4_framework/StaticFramework/Lumu/Products,
-					"/Users/Bench/Documents/Lumu/4_framework/StaticFramework/Lumu/LumuSDK-iOS",
 					"/Users/Bench/Developer/Lumu/iOS/SDK/StaticFramework/Lumu/LumuSDK-iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LumuExample/LumuExample-Prefix.pch";
 				INFOPLIST_FILE = "LumuExample/LumuExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lumulabs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -418,14 +420,15 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/Bench/Documents/Lumu/4_framework/StaticFramework/Lumu/Products,
-					"/Users/Bench/Documents/Lumu/4_framework/StaticFramework/Lumu/LumuSDK-iOS",
 					"/Users/Bench/Developer/Lumu/iOS/SDK/StaticFramework/Lumu/LumuSDK-iOS",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LumuExample/LumuExample-Prefix.pch";
 				INFOPLIST_FILE = "LumuExample/LumuExample-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lumulabs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -446,6 +449,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "LumuExampleTests/LumuExampleTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lumulabs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -464,6 +468,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LumuExample/LumuExample-Prefix.pch";
 				INFOPLIST_FILE = "LumuExampleTests/LumuExampleTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lumulabs.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

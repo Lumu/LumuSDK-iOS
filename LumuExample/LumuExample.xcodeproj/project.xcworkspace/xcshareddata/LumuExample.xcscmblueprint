@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8B93CBC09DFAE74A0CC7B5ABDEE5FEF3A4142A92",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "D68E4D93BC2006C9762132982D45788D3C870586" : 0,
+    "8B93CBC09DFAE74A0CC7B5ABDEE5FEF3A4142A92" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3391A2AE-16B5-46C4-B731-68EE516265BA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "D68E4D93BC2006C9762132982D45788D3C870586" : "",
+    "8B93CBC09DFAE74A0CC7B5ABDEE5FEF3A4142A92" : "LumuSDK-iOS"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LumuExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LumuExample\/LumuExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Lumu\/LumuSDK-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8B93CBC09DFAE74A0CC7B5ABDEE5FEF3A4142A92"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/benqo\/lumuframework.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "D68E4D93BC2006C9762132982D45788D3C870586"
+    }
+  ]
+}

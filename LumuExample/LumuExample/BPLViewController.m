@@ -19,7 +19,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-	[[UIApplication sharedApplication] setStatusBarHidden:YES];
 	LumuManager *lm = [LumuManager sharedManager];
 	lm.delegate = self;
 	[lm startLumuManager];
@@ -62,9 +61,9 @@
 	self.label.text = @"";
 }
 
-- (NSUInteger)supportedInterfaceOrientations
-{
-    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
-}
+//- (NSUInteger)supportedInterfaceOrientations
+//{
+//    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
+//}
 
 @end
