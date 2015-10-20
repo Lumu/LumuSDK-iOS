@@ -220,6 +220,9 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Lumu Labs";
 				TargetAttributes = {
+					C44394C018CE21A7003B4AB7 = {
+						DevelopmentTeam = Y2LVPY7GM7;
+					};
 					C44394E118CE21A7003B4AB7 = {
 						TestTargetID = C44394C018CE21A7003B4AB7;
 					};
@@ -398,11 +401,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Bench/Developer/Lumu/iOS/SDK/StaticFramework/Lumu/LumuSDK-iOS",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "LumuExample/LumuExample-Prefix.pch";
 				INFOPLIST_FILE = "LumuExample/LumuExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -418,11 +423,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/Bench/Developer/Lumu/iOS/SDK/StaticFramework/Lumu/LumuSDK-iOS",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "LumuExample/LumuExample-Prefix.pch";
 				INFOPLIST_FILE = "LumuExample/LumuExample-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
