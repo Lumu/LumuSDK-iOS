@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183022C81E28D2F900C3148B /* Lumu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 183022C71E28D2F900C3148B /* Lumu.framework */; };
 		C44394C518CE21A7003B4AB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44394C418CE21A7003B4AB7 /* Foundation.framework */; };
 		C44394C718CE21A7003B4AB7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44394C618CE21A7003B4AB7 /* CoreGraphics.framework */; };
 		C44394C918CE21A7003B4AB7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44394C818CE21A7003B4AB7 /* UIKit.framework */; };
@@ -25,7 +26,6 @@
 		C44394FE18CE21F3003B4AB7 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44394FD18CE21F3003B4AB7 /* MediaPlayer.framework */; };
 		C443950018CE21F8003B4AB7 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44394FF18CE21F8003B4AB7 /* AudioToolbox.framework */; };
 		C443950218CE2309003B4AB7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C443950118CE2309003B4AB7 /* CoreTelephony.framework */; };
-		C4D1E1D218EDABA000053002 /* Lumu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D1E1D118EDABA000053002 /* Lumu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183022C71E28D2F900C3148B /* Lumu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Lumu.framework; sourceTree = "<group>"; };
 		C44394C118CE21A7003B4AB7 /* LumuExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LumuExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C44394C418CE21A7003B4AB7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C44394C618CE21A7003B4AB7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,7 +63,6 @@
 		C44394FD18CE21F3003B4AB7 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		C44394FF18CE21F8003B4AB7 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C443950118CE2309003B4AB7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
-		C4D1E1D118EDABA000053002 /* Lumu.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lumu.framework; path = ../Lumu.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,7 @@
 				C44394FE18CE21F3003B4AB7 /* MediaPlayer.framework in Frameworks */,
 				C44394FC18CE21ED003B4AB7 /* AVFoundation.framework in Frameworks */,
 				C44394C718CE21A7003B4AB7 /* CoreGraphics.framework in Frameworks */,
-				C4D1E1D218EDABA000053002 /* Lumu.framework in Frameworks */,
+				183022C81E28D2F900C3148B /* Lumu.framework in Frameworks */,
 				C44394C918CE21A7003B4AB7 /* UIKit.framework in Frameworks */,
 				C44394C518CE21A7003B4AB7 /* Foundation.framework in Frameworks */,
 			);
@@ -116,7 +116,7 @@
 		C44394C318CE21A7003B4AB7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C4D1E1D118EDABA000053002 /* Lumu.framework */,
+				183022C71E28D2F900C3148B /* Lumu.framework */,
 				C443950118CE2309003B4AB7 /* CoreTelephony.framework */,
 				C44394FF18CE21F8003B4AB7 /* AudioToolbox.framework */,
 				C44394FD18CE21F3003B4AB7 /* MediaPlayer.framework */,
@@ -217,7 +217,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BPL;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Lumu Labs";
 				TargetAttributes = {
 					C44394C018CE21A7003B4AB7 = {
@@ -338,14 +338,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -377,13 +382,18 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -405,7 +415,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Bench/Developer/Lumu/iOS/SDK/StaticFramework/Lumu/LumuSDK-iOS",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "LumuExample/LumuExample-Prefix.pch";
@@ -427,7 +437,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"/Users/Bench/Developer/Lumu/iOS/SDK/StaticFramework/Lumu/LumuSDK-iOS",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "LumuExample/LumuExample-Prefix.pch";
