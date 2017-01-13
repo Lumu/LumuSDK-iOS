@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://lu.mu/"><img src="http://lu.mu/images/logo.png" alt="Lumu" title="Lumu" width="150px" /></a>
+  <a href="http://lu.mu/"><img src="https://cdn.shopify.com/s/files/1/0353/5253/files/lumu_logo_8291d4ae-31a0-47a8-a725-05c27b759114_100x@2x.jpg?v=1480334066" alt="Lumu" title="Lumu" width="150px" /></a>
 </p>
 
 ## Lumu iOS SDK
