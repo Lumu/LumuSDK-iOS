@@ -73,6 +73,10 @@
 
 @property (nonatomic, readonly) BOOL lumuCommunicationActive;
 
+@property (nonatomic, readonly) NSString *hwVersion;
+
+@property (nonatomic, readonly) NSString *fwVersion;
+
 /*
  * Shared instance.
 */
