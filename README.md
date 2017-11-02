@@ -2,6 +2,8 @@
   <a href="http://lu.mu/"><img src="https://cdn.shopify.com/s/files/1/0353/5253/files/lumu_logo_8291d4ae-31a0-47a8-a725-05c27b759114_100x@2x.jpg?v=1480334066" alt="Lumu" title="Lumu" width="150px" /></a>
 </p>
 
+## This is SDK for Lumu Lite (Lumu that connects to iOS devices via audio jack). Lumu Power is not yet supported.
+
 ## Lumu iOS SDK
 
 The Lumu SDK helps you connect [Lumu](http://lu.mu/) to your iOS application. It provides the essential methods for managing the connection with Lumu and receiving data.
